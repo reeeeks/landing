@@ -12,12 +12,41 @@
 
   <style>
     body {
-      background: rgb(255,68,16);
-      background: linear-gradient(4deg, rgba(255,68,16,1) 0%, rgba(255,141,0,1) 100%);
+      /* background: linear-gradient(4deg, rgba(255,68,16,1) 0%, rgba(255,141,0,1) 100%); */
+
+      /* COLORS
+      #4271a5
+      #415f99
+      #3b4f98
+
+      #241c53
+      #2f2265
+      #312477
+
+      #3b4f98
+      #312477
+      #241c53
+      */
 
       display: flex;
       justify-content: center;
       align-items: center;
+      background-image: linear-gradient(76deg, #2196f3, #009ff1, #00a7ec, #00afe6, #00b5df, #00b5df, #00b5df, #00b5df, #00afe6, #00a7ec, #009ff1, #2196f3);
+      background-size: 1600% 1600%;
+      background-repeat: repeat;
+      animation: gradient-animation 30s ease infinite;
+    }
+
+    @keyframes gradient-animation {
+        0% {
+            background-position: bottom left;
+        }
+        50% {
+            background-position: center center;
+        }
+        100% {
+            background-position: top right;
+        }
     }
 
     .logo-container {
